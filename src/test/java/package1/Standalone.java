@@ -36,7 +36,7 @@ public class Standalone extends BaseTest {
 	@Test(dataProvider="getData", groups= {"Purchase"})
 	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException
 	{
-		
+		//This is a test comment
 		ProductCatelog productCatelog =landingPage.LoginApplication(input.get("email"), input.get("password"));
 		List<WebElement> products=productCatelog.getProductList();
 		productCatelog.addProductToCart(input.get("products"));
